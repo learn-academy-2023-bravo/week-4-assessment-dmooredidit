@@ -72,10 +72,10 @@ palindrome_tester3 = 'Rotator'
 # Expected output: 'Rotator is a palindrome'
 
 def is_or_not(string)
-    if string == string.reverse
-        p "#{string} is a palindrome"
+    if string.upcase  == string.upcase.reverse
+         "#{string} is a palindrome"
     else 
-        p "#{string} is not a palindrome"
+         "#{string} is not a palindrome"
     end
 end
 
@@ -83,10 +83,7 @@ p is_or_not(palindrome_tester1)
 p is_or_not(palindrome_tester2)
 p is_or_not(palindrome_tester3)
 
-# ---> "racecaR is not a palindrome"
-# "racecaR is not a palindrome"
+# ---> "RACECAR is a palindrome"
 # "NRAEL is not a palindrome"
-# "NRAEL is not a palindrome"
-# "rotatoR is not a palindrome"
-# "rotatoR is not a palindrome"
-# I have no clue why I could not get it to return that racecar is a palindrome. But it appears that it is just printing 
+# "ROTATOR is not a palindrome"
+ 
